@@ -29,7 +29,7 @@ pip install pandas
 
 Aqui está um exemplo de como você pode usar o código fornecido para realizar cada uma das etapas mencionadas:
 
-**### 1. Criação do DataFrame**
+### 1. Criação do DataFrame
 ```python
 import pandas as pd
 

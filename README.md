@@ -23,6 +23,7 @@ Para executar este projeto, você precisa ter o Python e a biblioteca pandas ins
 
 ```bash
 pip install pandas
+```
 
 ## Como Usar
 

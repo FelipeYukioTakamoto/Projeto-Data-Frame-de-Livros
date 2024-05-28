@@ -6,6 +6,8 @@ O tema deste projeto foi inspirado pela vida real, especificamente pela minha bi
 
 A criação de um DataFrame de livros permite organizar, manipular e analisar esses dados de forma estruturada e eficiente. Através deste projeto, demonstramos como utilizar a biblioteca pandas do Python para realizar operações comuns em DataFrames e obter insights valiosos sobre a coleção de livros.
 
+Neste projeto, utilizamos a estrutura de dados DataFrame fornecida pela biblioteca Pandas. A escolha pelo DataFrame se deve a diversas características que fazem dele uma ferramenta robusta e eficiente para manipulação e análise de dados tabulares. Dentro do código foi utilizada a estrutura de Dicionário que serão posteriormente convertidos em um DataFrame pandas.
+
 ## Descrição
 
 O projeto aborda as seguintes etapas:

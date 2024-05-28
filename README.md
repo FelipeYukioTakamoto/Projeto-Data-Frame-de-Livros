@@ -37,14 +37,75 @@ Aqui está um exemplo de como você pode usar o código fornecido para realizar 
 ```python
 import pandas as pd
 
+# Definindo os dados para o DataFrame em um dicionário
 dados = {
-    'Titulo': ['Dom Quixote', 'Guerra e Paz', 'Moby Dick', 'Orgulho e Preconceito', '1984'],
-    'Autor': ['Miguel de Cervantes', 'Liev Tolstói', 'Herman Melville', 'Jane Austen', 'George Orwell'],
-    'Ano de Publicação': [1605, 1869, 1851, 1813, 1949],
-    'Gênero': ['Romance', 'Histórico', 'Aventura', 'Romance', 'Distopia']
+    'Titulo': [
+        'Dom Quixote', 'Guerra e Paz', 'Moby Dick', 'Orgulho e Preconceito', '1984',
+        'O Grande Gatsby', 'Ulisses', 'Cem Anos de Solidão', 'O Senhor dos Anéis', 'Crime e Castigo',
+        'O Apanhador no Campo de Centeio', 'As Vinhas da Ira', 'Lolita', 'O Estrangeiro',
+        'O Processo', 'A Metamorfose', 'O Sol é Para Todos', 'A Odisséia', 'Hamlet',
+        'O Hobbit', 'O Nome da Rosa', 'O Retrato de Dorian Gray', 'O Conde de Monte Cristo', 'A Divina Comédia',
+        'Os Miseráveis', 'A Montanha Mágica', 'Germinal', 'A Peste', 'Don Juan',
+        'O Médico e o Monstro', 'Memórias Póstumas de Brás Cubas', 'Grande Sertão: Veredas', 'A Moreninha',
+        'Iracema', 'Senhora', 'Mar Morto', 'Vidas Secas', 'Capitães da Areia', 'O Pequeno Príncipe'
+    ],
+    'Autor': [
+        'Miguel de Cervantes', 'Liev Tolstói', 'Herman Melville', 'Jane Austen', 'George Orwell',
+        'F. Scott Fitzgerald', 'James Joyce', 'Gabriel García Márquez', 'J.R.R. Tolkien', 'Fiódor Dostoiévski',
+        'J.D. Salinger', 'John Steinbeck', 'Vladimir Nabokov', 'Albert Camus',
+        'Franz Kafka', 'Franz Kafka', 'Harper Lee', 'Homero', 'William Shakespeare',
+        'J.R.R. Tolkien', 'Umberto Eco', 'Oscar Wilde', 'Alexandre Dumas', 'Dante Alighieri',
+        'Victor Hugo', 'Thomas Mann', 'Émile Zola', 'Albert Camus', 'Lord Byron',
+        'Robert Louis Stevenson', 'Machado de Assis', 'João Guimarães Rosa', 'Joaquim Manuel de Macedo',
+        'José de Alencar', 'José de Alencar', 'Jorge Amado', 'Graciliano Ramos', 'Jorge Amado', 'Antoine de Saint-Exupéry'
+    ],
+    'Ano de Publicação': [
+        1605, 1869, 1851, 1813, 1949,
+        1925, 1922, 1967, 1954, 1866,
+        1951, 1939, 1955, 1942,
+        1925, 1915, 1960, -800, 1600,
+        1937, 1980, 1890, 1844, 1320,
+        1862, 1924, 1885, 1947, 1819,
+        1886, 1881, 1956, 1844,
+        1865, 1875, 1936, 1938, 1937, 1943
+    ],
+    'Gênero': [
+        'Romance', 'Histórico', 'Aventura', 'Romance', 'Distopia',
+        'Romance', 'Modernismo', 'Realismo Mágico', 'Fantasia', 'Ficção Psicológica',
+        'Romance', 'Drama', 'Ficção', 'Ficção Filosófica',
+        'Ficção', 'Ficção', 'Drama', 'Épico', 'Tragédia',
+        'Fantasia', 'Mistério', 'Ficção', 'Aventura', 'Poesia',
+        'Drama', 'Ficção', 'Realismo', 'Ficção Filosófica', 'Poesia',
+        'Terror', 'Romance', 'Modernismo', 'Romance',
+        'Romance', 'Romance', 'Ficção', 'Ficção', 'Ficção', 'Infantil'
+    ],
+    'Editora': [
+        'Companhia das Letras', 'Editora Record', 'Editora Rocco', 'Editora Arqueiro', 'Companhia das Letras',
+        'Editora Rocco', 'Companhia das Letras', 'Editora Record', 'Companhia das Letras', 'Editora Record',
+        'Companhia das Letras', 'Editora Rocco', 'Companhia das Letras', 'Editora Rocco',
+        'Companhia das Letras', 'Companhia das Letras', 'Editora Record', 'Companhia das Letras', 'Companhia das Letras',
+        'Companhia das Letras', 'Editora Rocco', 'Companhia das Letras', 'Editora Record', 'Companhia das Letras',
+        'Editora Rocco', 'Companhia das Letras', 'Editora Rocco', 'Editora Rocco', 'Companhia das Letras',
+        'Editora Rocco', 'Companhia das Letras', 'Editora Record', 'Companhia das Letras',
+        'Editora Record', 'Editora Record', 'Editora Rocco', 'Companhia das Letras', 'Editora Record', 'Companhia das Letras'
+    ],
+    'Número de Páginas': [
+        863, 1225, 635, 279, 328,
+        218, 730, 417, 1216, 430,
+        277, 464, 336, 123,
+        304, 201, 281, 374, 342,
+        310, 592, 254, 1243, 426,
+        1488, 720, 556, 308, 128,
+        138, 192, 624, 192,
+        140, 268, 256, 176, 288, 96
+    ]
 }
 
+# Criando o DataFrame usando o dicionário de dados
 df = pd.DataFrame(dados)
+
+# Exibindo o DataFrame completo
+print("DataFrame completo:")
 print(df)
 ```
 Apresentação de Toda a Base de Dados: Uma vez que o DataFrame é criado, podemos exibi-lo na tela usando a função print(df). Isso mostra todas as linhas e colunas do DataFrame.

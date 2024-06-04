@@ -205,6 +205,8 @@ PyData. pandas.DataFrame. Disponível em: https://pandas.pydata.org/docs/referen
 
 ## Licença
 
+https://colab.research.google.com/drive/1BcOVPYmkfiXGLJf7G61c9MDArARhdvjP?usp=sharing
+
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
 ---

@@ -8,6 +8,8 @@ A criação de um DataFrame de livros permite organizar, manipular e analisar es
 
 Neste projeto, utilizamos a estrutura de dados DataFrame fornecida pela biblioteca Pandas. A escolha pelo DataFrame se deve a diversas características que fazem dele uma ferramenta robusta e eficiente para manipulação e análise de dados tabulares. Dentro do código foi utilizada a estrutura de Dicionário que serão posteriormente convertidos em um DataFrame pandas.
 
+https://colab.research.google.com/drive/1BcOVPYmkfiXGLJf7G61c9MDArARhdvjP?usp=sharing
+
 ## Descrição
 
 O projeto aborda as seguintes etapas:
@@ -204,8 +206,6 @@ Python Academy. DataFrames do Pandas. Disponível em: https://pythonacademy.com.
 PyData. pandas.DataFrame. Disponível em: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html. Acesso em: [21 maio 2024].
 
 ## Licença
-
-https://colab.research.google.com/drive/1BcOVPYmkfiXGLJf7G61c9MDArARhdvjP?usp=sharing
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 

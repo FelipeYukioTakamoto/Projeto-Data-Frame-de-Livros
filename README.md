@@ -1,5 +1,9 @@
 # Projeto Data Frame de Livros e Manipulação de Dados com Pandas
 
+Aluno: Felipe Yukio da Silva Takamoto
+RGM: 33557993
+Curso: CCP - Estrutura de Dados I - N1
+
 Este projeto é uma demonstração de habilidades em manipulação de dados e programação utilizando a biblioteca pandas do Python. O objetivo é realizar várias operações comuns em DataFrames, como criação, acesso, modificação, transposição e verificação de dados.
 
 O tema deste projeto foi inspirado pela vida real, especificamente pela minha biblioteca pessoal em casa. A base de dados contém informações sobre alguns dos livros dessa coleção particular, incluindo títulos, autores, anos de publicação e gêneros. 

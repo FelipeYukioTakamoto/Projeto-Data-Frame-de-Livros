@@ -37,7 +37,7 @@ pip install pandas
 
 Aqui está um exemplo de como você pode usar o código fornecido para realizar cada uma das etapas mencionadas:
 
-### 1. Criação do DataFrame
+### Criação do DataFrame
 ```python
 import pandas as pd
 
@@ -114,7 +114,7 @@ print(df)
 ```
 Apresentação de Toda a Base de Dados: Uma vez que o DataFrame é criado, podemos exibi-lo na tela usando a função print(df). Isso mostra todas as linhas e colunas do DataFrame.
 
-### 2. Apresentação do DataFrame
+### 1. Apresentação do DataFrame
 
 ```python
 print("DataFrame completo:")
@@ -122,14 +122,14 @@ print(df)
 ```
 Apresentação do Tamanho do DataFrame: O atributo .shape retorna uma tupla com o número de linhas e colunas do DataFrame. Isso é útil para entender a dimensão do DataFrame e sua estrutura.
 
-### 3. Tamanho do DataFrame
+### 2. Tamanho do DataFrame
 
 ```python
 print("Tamanho do DataFrame:", df.shape)
 ```
 Acesso e Apresentação de uma Linha Específica: Para acessar uma linha específica do DataFrame, usamos o método .loc[]. Este método permite acessar uma linha pelo seu rótulo. Após acessar a linha, ela pode ser apresentada na tela usando print(df.loc[linha_indice]).
 
-### 4. Acesso a uma Linha Específica
+### 3. Acesso a uma Linha Específica
 
 ```python
 linha_indice = 2
@@ -138,14 +138,14 @@ print(df.loc[linha_indice])
 ```
 Verificação se o DataFrame Está Vazio: O atributo .empty retorna True se o DataFrame estiver vazio (não contiver linhas) e False caso contrário. Isso é útil para verificar se o DataFrame contém dados antes de realizar operações nele.
 
-### 5. Verificação se o DataFrame Está Vazio
+### 4. Verificação se o DataFrame Está Vazio
 
 ```python
 print("DataFrame está vazio?", df.empty)
 ```
 Apresentação dos 5 Primeiros Registros: O método .head() retorna as primeiras linhas do DataFrame. O padrão é retornar as primeiras 5 linhas, mas esse número pode ser especificado. Isso é útil para uma rápida visualização dos dados.
 
-### 6. Apresentação dos 5 Primeiros Registros
+### 5. Apresentação dos 5 Primeiros Registros
 
 ```python
 print("Os 5 primeiros registros do DataFrame:")
@@ -153,7 +153,7 @@ print(df.head())
 ```
 Exclusão de uma Linha da Base de Dados: O método .drop() é usado para excluir linhas ou colunas do DataFrame. Passamos o índice da linha que desejamos excluir como argumento. Isso permite remover dados indesejados do DataFrame.
 
-### 7. Exclusão de uma Linha
+### 6. Exclusão de uma Linha
 
 ```python
 df = df.drop(index=2)
@@ -162,7 +162,7 @@ print(df)
 ```
 Adição de uma Linha à Base de Dados: O método .append() é usado para adicionar uma nova linha ao DataFrame. Podemos passar um dicionário contendo os dados da nova linha como argumento. Isso é útil para inserir novos dados no DataFrame.
 
-### 8. Adição de uma Linha
+### 7. Adição de uma Linha
 
 ```python
 novo_livro = {'Titulo': 'Harry Potter', 'Autor': 'J.K. Rowling', 'Ano de Publicação': 1997, 'Gênero': 'Fantasia'}
@@ -172,7 +172,7 @@ print(df)
 ```
 Transposição da Coluna para a Linha: A transposição de um DataFrame significa trocar suas linhas por colunas e vice-versa. Isso é útil para alterar a orientação dos dados, especialmente em análises onde essa forma de apresentação é mais adequada.
 
-### 9. Transposição do DataFrame
+### 8. Transposição do DataFrame
 
 ```python
 df_transposto = df.transpose()
@@ -181,7 +181,7 @@ print(df_transposto)
 ```
 Apresentação das Duas Primeiras Colunas: Podemos selecionar as colunas desejadas do DataFrame usando indexação ou o método .iloc[]. Usando .iloc[:, :2], selecionamos todas as linhas (:) e as duas primeiras colunas (:2). Isso nos permite exibir apenas as informações relevantes.
 
-### 10. Exibição das Duas Primeiras Colunas
+### 9. Exibição das Duas Primeiras Colunas
 
 ```python
 print("Primeira e segunda colunas do DataFrame:")

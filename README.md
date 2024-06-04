@@ -172,6 +172,8 @@ print(df)
 ```
 Transposição da Coluna para a Linha: A transposição de um DataFrame significa trocar suas linhas por colunas e vice-versa. Isso é útil para alterar a orientação dos dados, especialmente em análises onde essa forma de apresentação é mais adequada.
 
+Se você concatenar dois DataFrames e não usar ignore_index=True, os índices dos DataFrames originais serão mantidos, o que pode resultar em índices duplicados no DataFrame final. Usando ignore_index=True, os índices do DataFrame resultante começarão de 0 e aumentarão sequencialmente.
+
 ### 8. Transposição do DataFrame
 
 ```python
